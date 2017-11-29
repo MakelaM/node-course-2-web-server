@@ -32,6 +32,8 @@ hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
 });
 
+
+//tests
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'About Page',
