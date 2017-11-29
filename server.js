@@ -47,6 +47,13 @@ app.get('/about', (reg, res) => {
     });
 });
 
+app.get('/projects', (reg, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        currentYear: new Date().getFullYear()
+    });
+});
+
 app.get('/bad', (reg, res) => {
     res.send({
         errorMessage: 'Error sending request'
